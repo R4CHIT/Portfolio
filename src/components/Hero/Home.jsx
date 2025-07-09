@@ -18,32 +18,33 @@ function Home() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="flex flex-col text-center max-w-[90vw] sm:max-w-[85vw] md:max-w-[70vw] mt-4"
-        >
-          <div className="text-[34px] sm:text-[40px] md:text-[60px] lg:text-[72px] font-bold leading-tight tracking-wide flex flex-wrap justify-center gap-2">
-            <span className="text-black dark:text-white">Bringing</span>
-            <span className="text-[#3b82f5] dark:text-[#3b82f5]">UI</span>
-            <span className="text-white dark:text-white">&</span>
-            <span className="text-[#3b82f5] dark:text-[#3b82f5]">Backend</span>
-          </div>
-          <span className="block mt-2 sm:mt-0 sm:ml-2 text-[32px] sm:text-[40px] md:text-[60px] lg:text-[72px] font-bold tracking-wide">
-            Together
-          </span>
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="flex flex-col text-center w-full px-4 sm:px-6 max-w-[95vw] sm:max-w-[90vw] md:max-w-[75vw] mt-6"
+>
+  <div className="text-[40px] sm:text-[50px] md:text-[64px] lg:text-[72px] font-bold leading-tight tracking-wide flex flex-wrap justify-center gap-2">
+    <span className="text-black dark:text-white">Bringing</span>
+    <span className="text-[#3b82f5] dark:text-[#3b82f5]">UI</span>
+    <span className="text-white dark:text-white">&</span>
+    <span className="text-[#3b82f5] dark:text-[#3b82f5]">Backend</span>
+  </div>
+  <span className="block mt-3 text-[36px] sm:text-[48px] md:text-[60px] font-bold tracking-wide">
+    Together
+  </span>
 
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="pt-5 pb-8 text-xs sm:text-sm md:text-base text-dark-200 dark:text-stone-200/70 max-w-2xl mx-auto"
-          >
-            I'm Rachit Tiwari, a 17-year-old full-stack developer who’s all about building dope web experiences.
-          </motion.p>
-        </motion.div>
+  <motion.p
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 0.2 }}
+    viewport={{ once: true }}
+    className="pt-5 pb-8 text-sm sm:text-base md:text-lg text-dark-200 dark:text-stone-200/70 max-w-2xl mx-auto px-2"
+  >
+    I'm Rachit Tiwari, a 17-year-old full-stack dev building clean, modern, and spicy web experiences from scratch 💻⚡
+  </motion.p>
+</motion.div>
+
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
