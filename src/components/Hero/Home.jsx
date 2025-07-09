@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 function Home() {
+  const [age,setAge] =useState(0)
+  useEffect(()=>{
+    const Age=()=>{
+      setAge(new Date().getFullYear()-2008)
+    }
+    Age();
+  },[])
   return (
     <div className="text-white">
       <div className="min-h-screen h-[100vh] flex flex-col items-center justify-center px-4 sm:px-6 relative pt-2">
@@ -40,7 +47,7 @@ function Home() {
             viewport={{ once: true }}
             className="pt-6 pb-10 text-base sm:text-lg md:text-xl text-stone-300 max-w-2xl mx-auto"
           >
-            I'm Rachit Tiwari, a 17-year-old full-stack dev crafting slick,
+            I'm Rachit Tiwari, a {age}-year-old full-stack dev crafting slick,
             modern, and performant web apps 🚀
           </motion.p>
         </motion.div>
