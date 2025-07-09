@@ -25,7 +25,7 @@ function Skill() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="min-h-screen bg-black text-white py-0 md:py-29"
+      className="min-h-screen bg-black text-white py-[-120px] md:py-0"
     >
       <div className="max-w-[84vw] mx-auto">
         <motion.div
