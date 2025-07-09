@@ -50,6 +50,7 @@ function Home() {
           viewport={{ once: true }}
           className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8"
         >
+          <a href="#work">
           <button className="relative self-start z-10 inline-flex gap-2.5 h-10 sm:h-13 items-center justify-center 
             rounded-md border border-dark-700 
             bg-[linear-gradient(110deg,#1A1A1A,45%,#262626,55%,#1A1A1A)] 
@@ -60,7 +61,7 @@ function Home() {
             focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
             style={{ overflow: "hidden" }}
           >
-            <a href="#work">See My Work</a>
+            See My Work
             <span
               className="absolute top-0 left-[-50%] h-[3px] w-1/2 bg-gradient-to-r from-slate-200 via-white to-slate-200 
               opacity-75 blur-md"
@@ -69,6 +70,7 @@ function Home() {
               }}
             />
           </button>
+          </a>
 
           <div className="flex flex-row items-center gap-2 cursor-pointer select-none text-sm sm:text-base text-blue-500 font-semibold">
             <FiDownload className="text-blue-500 text-xl sm:text-2xl" />

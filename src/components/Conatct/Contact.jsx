@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 function Aboutus() {
@@ -8,7 +8,7 @@ function Aboutus() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
-      className="min-h-screen bg-black text-white py-20 px-4 sm:px-6 md:px-10"
+      className="min-h-screen bg-black text-white py-20 px-4 sm:px-6 md:px-10 relative"
     >
       <div className="max-w-[90vw] md:max-w-[84vw] mx-auto border border-[#262626] flex flex-col gap-5">
         {/* Top Section */}
@@ -31,7 +31,7 @@ function Aboutus() {
             </a>{" "}
             to collaborate!
           </div>
-
+          <a href="mailto:tiwarirachit50@gmail.com" target="_blank">
           <motion.button
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -62,6 +62,7 @@ function Aboutus() {
               }
             `}</style>
           </motion.button>
+          </a>
         </motion.div>
 
         {/* Bottom Section */}
@@ -98,10 +99,18 @@ function Aboutus() {
             >
               <span className="text-[18px] sm:text-[20px] font-semibold">Navigate</span>
               <div className="flex flex-col mt-2 space-y-1">
-                <a href="#home" className="text-[#858585] hover:text-white transition">Home</a>
-                <a href="#about" className="text-[#858585] hover:text-white transition">About</a>
-                <a href="#work" className="text-[#858585] hover:text-white transition">Work</a>
-                <a href="#contact" className="text-[#858585] hover:text-white transition">Contact</a>
+                <a href="#home" className="text-[#858585] hover:text-white transition">
+                  Home
+                </a>
+                <a href="#about" className="text-[#858585] hover:text-white transition">
+                  About
+                </a>
+                <a href="#work" className="text-[#858585] hover:text-white transition">
+                  Work
+                </a>
+                <a href="#contact" className="text-[#858585] hover:text-white transition">
+                  Contact
+                </a>
               </div>
             </motion.div>
 
@@ -115,10 +124,38 @@ function Aboutus() {
             >
               <span className="text-[18px] sm:text-[20px] font-semibold">Socials</span>
               <div className="flex flex-col mt-2 space-y-1">
-                <a href="https://www.linkedin.com/in/rachit-tiwari-8726a1342/" target="blank" className="text-[#858585] hover:text-white transition">LinkedIn</a>
-                <a href="https://github.com/R4CHIT" target="blank" className="text-[#858585] hover:text-white transition">GitHub</a>
-                <a href="https://www.facebook.com/rachit.tiwari.619206" target="blank" className="text-[#858585] hover:text-white transition">Facebook</a>
-                <a href="https://www.instagram.com/mr_______rachit/" target="blank" className="text-[#858585] hover:text-white transition">Instagram</a>
+                <a
+                  href="https://www.linkedin.com/in/rachit-tiwari-8726a1342/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#858585] hover:text-white transition"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href="https://github.com/R4CHIT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#858585] hover:text-white transition"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.facebook.com/rachit.tiwari.619206"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#858585] hover:text-white transition"
+                >
+                  Facebook
+                </a>
+                <a
+                  href="https://www.instagram.com/mr_______rachit/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#858585] hover:text-white transition"
+                >
+                  Instagram
+                </a>
               </div>
             </motion.div>
           </div>
