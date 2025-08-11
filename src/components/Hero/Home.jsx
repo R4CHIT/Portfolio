@@ -82,7 +82,7 @@ function Home() {
             </button>
           </a>
 
-          <a href="CV-personal.pdf" download="CV-personal.pdf">
+          <a href="/Rachit-Tiwari-cv.pdf" download="rachitTiwariCv.pdf">
   <div class="flex items-center gap-2 cursor-pointer text-base sm:text-lg text-blue-500 font-semibold">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-2xl sm:text-3xl">
       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
