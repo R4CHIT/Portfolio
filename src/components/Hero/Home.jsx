@@ -3,13 +3,13 @@ import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 function Home() {
-  const [age,setAge] =useState(0)
-  useEffect(()=>{
-    const Age=()=>{
-      setAge(new Date().getFullYear()-2008)
-    }
+  const [age, setAge] = useState(0);
+  useEffect(() => {
+    const Age = () => {
+      setAge(new Date().getFullYear() - 2008);
+    };
     Age();
-  },[])
+  }, []);
   return (
     <div className="text-white">
       <div className="min-h-screen h-[100vh] flex flex-col items-center justify-center px-4 sm:px-6 relative pt-2">
@@ -82,10 +82,16 @@ function Home() {
             </button>
           </a>
 
-          <div className="flex items-center gap-2 cursor-pointer text-base sm:text-lg text-blue-500 font-semibold">
-            <FiDownload className="text-2xl sm:text-3xl" />
-            Download CV
-          </div>
+          <a href="CV-personal.pdf" download="CV-personal.pdf">
+  <div class="flex items-center gap-2 cursor-pointer text-base sm:text-lg text-blue-500 font-semibold">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-2xl sm:text-3xl">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+      <polyline points="7 10 12 15 17 10"></polyline>
+      <line x1="12" y1="15" x2="12" y2="3"></line>
+    </svg>
+    Download CV
+  </div>
+</a>
         </motion.div>
 
         <style>{`

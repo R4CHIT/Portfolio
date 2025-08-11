@@ -7,7 +7,7 @@ const Myproject = () => {
     {
       name: "Social Media App",
       image: "/proj2.png",
-      skill: ["Rest", "React.js", "Django", "Toast", "Sqlite3"],
+      skill: ["Rest", "React.js", "Django", "Sqlite3"],
       description:
         "A full-stack social media application built with modern technologies for seamless user experience.",
       github: "https://github.com/R4CHIT/SocialMediaAPP.git",
@@ -26,9 +26,9 @@ const Myproject = () => {
       image: "/e-commerce.png",
       skill: ["React.js", "Node.js", "Express.js", "Mongo.db"],
       description:
-        "Real-time collaborative task management tool with team features.",
+        "A Food E-com web where user can order food.",
       github: "https://github.com/R4CHIT/E-commerce.git",
-      live: "https://mastercheif.vercel.app/",
+      live: "https://mastercheif2.netlify.app/",
     },
   ];
 
