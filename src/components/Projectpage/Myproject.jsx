@@ -22,13 +22,13 @@ const Myproject = () => {
       live: "https://message-rachit.vercel.app/",
     },
     {
-      name: "E-commerce web",
-      image: "/e-commerce.png",
+      name: "PhoneBazar",
+      image: "/Screenshot 2025-08-17 205158.png",
       skill: ["React.js", "Node.js", "Express.js", "Mongo.db"],
       description:
-        "A Food E-com web where user can order food.",
+        "A Mobile E-com web where user can buy phones.",
       github: "https://github.com/R4CHIT/E-commerce.git",
-      live: "https://mastercheif2.netlify.app/",
+      live: "https://phonebazar9.netlify.app/",
     },
   ];
 
